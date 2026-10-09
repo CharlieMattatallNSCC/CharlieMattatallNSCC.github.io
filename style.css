@@ -1,44 +1,68 @@
+:root {
+    --primary:#B2BCAA;
+    --secondary:#4A5043;
+    --accent:#E29522;
+}
+
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #D6DAD2;
 }
 
+/* Commenting out the header CSS style as the header was removed from the index.html
 header {
-    background-color: #4f6d7a;
+    background-color: #B2BCAA;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
+*/
+-->
 nav {
-    background-color: #6f8f9c;
+    background-color: var(--secondary);
     text-align: center;
-    padding: 15px;
+    padding: 25px;
+    padding-top: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
 }
 
 nav a {
-    color: white;
+    color: var(--accent);
     text-decoration: none;
     margin: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.cta {
+    background-color: var(--accent);
+    padding: 7px;
+    border: 7px solid var(--accent);
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 main {
     width: 80%;
     margin: 30px auto;
-    background-color: white;
     padding: 20px;
+    border: 20px solid var(--secondary);
+    border-radius: 10px;
 }
 
 section {
-    background-color: #e8f1f2;
+    background-color: var(--primary);
     margin-bottom: 20px;
     padding: 20px;
 }
 
 footer {
-    background-color: #4f6d7a;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--accent);
     text-align: center;
     padding: 15px;
 }
